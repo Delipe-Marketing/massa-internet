@@ -15,18 +15,18 @@ const planos = [
       { Icon: "mynaui:percentage-waves-solid", text: ["Desconto de 10%", "na conta de energia"] }
     ],
     options: [
-      { image: "images/hbo.png", text: "HBO Max", name: "hbo" },
-      { image: "images/globoplay.png", text: "Globoplay", name: "globoplay" },
-      { image: "images/premiere.png", text: "Premiere", name: "premiere" },
-      { image: "images/paramount.png", text: "Paramount+", name: "paramount" },
-      { image: "images/semfidelidade.png", text: "Sem fidelidade", name: "semfidelidade" }
+      { image: "/images/hbo.png", text: "HBO Max", name: "hbo" },
+      { image: "/images/globoplay.png", text: "Globoplay", name: "globoplay" },
+      { image: "/images/premiere.png", text: "Premiere", name: "premiere" },
+      { image: "/images/paramount.png", text: "Paramount+", name: "paramount" },
+      { image: "/images/semfidelidade.png", text: "Sem fidelidade", name: "semfidelidade" }
     ]
   },
   {
     speed: "710",
     unit: "mega",
     price: "108,99",
-    feature: { image: "images/paramount.png", text: ["Paramount+ por", "6 meses grátis"] },
+    feature: { image: "/images/paramount.png", text: ["Paramount+ por", "6 meses grátis"] },
     benefits: [
       { Icon: "material-symbols:wifi-rounded", text: ["Wi-Fi 6"] },
       { Icon: "mdi:television", text: ["65 Canais de TV"] },
@@ -34,17 +34,17 @@ const planos = [
       { Icon: "mynaui:percentage-waves-solid", text: ["Desconto de 10%", "na conta de energia"] }
     ],
     options: [
-      { image: "images/hbo.png", text: "HBO Max", name: "hbo" },
-      { image: "images/globoplay.png", text: "Globoplay", name: "globoplay" },
-      { image: "images/premiere.png", text: "Premiere", name: "premiere" },
-      { image: "images/semfidelidade.png", text: "Sem Fidelidade", name: "semfidelidade" }
+      { image: "/images/hbo.png", text: "HBO Max", name: "hbo" },
+      { image: "/images/globoplay.png", text: "Globoplay", name: "globoplay" },
+      { image: "/images/premiere.png", text: "Premiere", name: "premiere" },
+      { image: "/images/semfidelidade.png", text: "Sem Fidelidade", name: "semfidelidade" }
     ]
   },
   {
     speed: "920",
     unit: "mega",
     price: "129,90",
-    feature: { image: "images/hbo.png", text: ["HBO MAX por", "6 meses grátis"] },
+    feature: { image: "/images/hbo.png", text: ["HBO MAX por", "6 meses grátis"] },
     benefits: [
       { Icon: "material-symbols:wifi-rounded", text: ["Wi-Fi 6"] },
       { Icon: "mdi:television", text: ["65 Canais de TV"] },
@@ -52,10 +52,10 @@ const planos = [
       { Icon: "mynaui:percentage-waves-solid", text: ["Desconto de 10%", "na conta de energia"] }
     ],
     options: [
-      { image: "images/globoplay.png", text: "Globoplay", name: "globoplay" },
-      { image: "images/premiere.png", text: "Premiere", name: "premiere" },
-      { image: "images/paramount.png", text: "Paramount+", name: "paramount" },
-      { image: "images/semfidelidade.png", text: "Sem Fidelidade", name: "semfidelidade" }
+      { image: "/images/globoplay.png", text: "Globoplay", name: "globoplay" },
+      { image: "/images/premiere.png", text: "Premiere", name: "premiere" },
+      { image: "/images/paramount.png", text: "Paramount+", name: "paramount" },
+      { image: "/images/semfidelidade.png", text: "Sem Fidelidade", name: "semfidelidade" }
     ]
   }
 ]

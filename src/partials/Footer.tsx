@@ -24,7 +24,7 @@ export default function Footer() {
 
       <div className="w-full flex flex-col items-center px-4 py-8 md:py-12 gap-8">
         <div className="flex flex-col items-center gap-4">
-          <img src="images/Logo.svg" alt="Logo" className="w-40 md:w-60" />
+          <img src="/images/Logo.svg" alt="Logo" className="w-40 md:w-60" />
           <div className="text-sm md:text-base text-center">Rua Henrique Novaes, Centro,<br /> Itaguaçu/ES</div>
           <h1 className="text-2xl md:text-4xl">0800 591 8681</h1>
         </div>

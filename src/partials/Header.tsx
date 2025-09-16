@@ -40,7 +40,7 @@ export default function Header() {
 
       <div className="flex justify-between items-center px-4 md:px-44 py-4 border-b-3 border-primary relative">
         <a href="/" className="flex justify-center items-center hover:scale-110 transition-all duration-300">
-          <img src="images//Logo.svg" alt="Logo" className="w-40 md:w-60" />
+          <img src="/images/Logo.svg" alt="Logo" className="w-40 md:w-60" />
         </a>
 
         {/* Menu Desktop */}
