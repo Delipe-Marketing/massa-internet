@@ -82,7 +82,7 @@ export default function Planos() {
       <h1 className="text-2xl md:text-4xl font-bold text-primary text-center px-4">Planos de verdade para uma vida conectada!</h1>
       <h2 className="text-sm md:text-2sm text-primary mb-8 md:mb-16 text-center px-4">Assine os melhores planos de internet fibra com Wi-Fi grátis e tenha velocidade e estabilidade.</h2>
 
-      <div className="flex flex-col md:flex-row gap-4 w-full max-w-7xl">
+      <div className="flex flex-col md:flex-row gap-4 w-full max-w-7xl justify-center items-center">
         {planos.map((plano, planoIndex) => (
           <div key={planoIndex} className="w-full md:w-80 py-4 border-2 border-primary rounded-4xl flex flex-col relative">
             <div className="text-xs md:text-sm absolute top-0 right-0 w-32 md:w-45 h-8 md:h-10 flex justify-center items-center rounded-bl-4xl rounded-tr-3xl border-t-0 border-r-0 bg-primary text-secondary">100% FIBRA ÓPTICA</div>
