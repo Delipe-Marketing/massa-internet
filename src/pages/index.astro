@@ -2,13 +2,25 @@
 import Layout from '@/layouts/Layout.astro';
 import Fita from '@/components/Fita';
 import Planos from '@/components/Planos';
+import Banner from '@/components/Banner';
+import CTA from '@/components/CTA';
+import QuemSomos from '@/components/QuemSomos';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
+
+	<Banner href="banners/Home.mp4" client:only/>
+
 	<Fita client:only/>
-	
+
 	<Planos client:only/>
+
+	<img src="banners/Banner.png" class="mt-16" />
+
+	<CTA client:only/>
+
+	<QuemSomos client:only/>
+
+	<img src="banners/Indique.png" class="mt-16 w-3/4 mx-auto mb-16" />
 </Layout>

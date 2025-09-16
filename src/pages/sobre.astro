@@ -1,0 +1,15 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Banner from '@/components/Banner.tsx';
+import QuemSomos from '@/components/QuemSomos.tsx';
+import Valores from '@/components/Valores.tsx';
+---
+
+<Layout title="Sobre - Massa Internet">
+    
+    <Banner href="/banners/Home.mp4" />
+    
+    <QuemSomos client:only/>
+    
+    <Valores client:load />
+</Layout>

@@ -1,35 +1,43 @@
 @import "tailwindcss";
-@import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
 
 @theme {
 	--color-primary: #0c544a;
 	--color-secondary: #ff6b02;
+	--primary: #0c544a;
+	--secondary: #ff6b02;
 }
 
 @layer base {
 	@font-face {
 		font-family: 'UniNeue';
-		src: url("/fonts/UniNeueLight.woff2") format("woff2");
-		font-weight: 200;
-	}
-
-	@font-face {
-		font-family: 'UniNeue';
-		src: url("/fonts/UniNeueHeavy.woff2") format("woff2");
-		font-weight: bold;
-	}
-
-	@font-face {
-		font-family: 'UniNeue';
-		src: url("/fonts/UniNeueRegular.woff2") format("woff2");
+		src: url("/fonts/UniNeueRegular.otf") format("opentype");
 		font-weight: normal;
+	}
+
+	@font-face {
+		font-family: 'UniNeue';
+		src: url("/fonts/UniNeueBold.otf") format("opentype");
+		font-weight: bold;
 	}
 }
 
 body {
 	font-family: "UniNeue", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.uniNeueBold {
+	font-family: "UniNeue", sans-serif;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.uniNeueHeavy {
+	font-family: "UniNeue", sans-serif;
+	font-weight: heavy;
+	font-style: normal;
 }
 
 ::-webkit-scrollbar {
@@ -52,12 +60,25 @@ body {
 		transform: translateX(0);
 	}
 	100% {
-		transform: translateX(-50%);
+		transform: translateX(-33.333%);
+	}
+}
+
+@keyframes scroll-smooth {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-33.333%);
 	}
 }
 
 .animate-scroll {
 	animation: scroll 10s linear infinite;
+}
+
+.animate-scroll-smooth {
+	animation: scroll-smooth 15s linear infinite;
 }
 
 @theme inline {
@@ -106,9 +127,7 @@ body {
 	--card-foreground: oklch(0.145 0 0);
 	--popover: oklch(1 0 0);
 	--popover-foreground: oklch(0.145 0 0);
-	--primary: oklch(0.205 0 0);
 	--primary-foreground: oklch(0.985 0 0);
-	--secondary: oklch(0.97 0 0);
 	--secondary-foreground: oklch(0.205 0 0);
 	--muted: oklch(0.97 0 0);
 	--muted-foreground: oklch(0.556 0 0);
@@ -140,9 +159,7 @@ body {
 	--card-foreground: oklch(0.985 0 0);
 	--popover: oklch(0.205 0 0);
 	--popover-foreground: oklch(0.985 0 0);
-	--primary: oklch(0.922 0 0);
 	--primary-foreground: oklch(0.205 0 0);
-	--secondary: oklch(0.269 0 0);
 	--secondary-foreground: oklch(0.985 0 0);
 	--muted: oklch(0.269 0 0);
 	--muted-foreground: oklch(0.708 0 0);

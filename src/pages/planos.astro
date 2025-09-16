@@ -1,0 +1,25 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Banner from '@/components/Banner.tsx';
+import PlanosComponent from '@/components/Planos.tsx';
+import CTA from '@/components/CTA.tsx';
+import FaleConosco from '@/components/FaleConosco.tsx';
+---
+
+<Layout title="Planos - Massa Internet">
+  <main>
+    <!-- Banner com vídeo Home.mp4 -->
+    <Banner href="/banners/Home.mp4" />
+    
+    <!-- Componente de Planos -->
+    <PlanosComponent client:load />
+    
+    <!-- Banner com imagem Banner.png -->
+    <img src="/banners/Banner.png" class="mt-16" />
+    
+    <!-- Call to Action -->
+    <CTA client:load />
+
+    <FaleConosco client:load />
+  </main>
+</Layout>
