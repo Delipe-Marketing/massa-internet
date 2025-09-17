@@ -142,7 +142,7 @@ export default function Planos() {
                 Ative abaixo no seu plano:
               </h1>
 
-              <div className="flex flex-col gap-2 mt-4 max-lg:w-2/3  mx-auto">
+              <div className="flex flex-col gap-2 mt-4">
                 {plano.options.map((option, optionIndex) => (
 
                   <div key={optionIndex} className="flex flex-col items-center justify-between border-2 border-black px-2 py-2 md:py-3 rounded-lg">
