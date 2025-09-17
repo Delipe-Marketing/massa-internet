@@ -4,17 +4,17 @@ const principios = [
   {
     icon: "material-symbols:target",
     title: "Missão",
-    description: "Conectar pessoas e famílias em Osasco e região com internet de alta velocidade e comunicação de qualidade, facilitando o dia a dia com serviços confiáveis."
+    description: "Não somos apenas um provedor; representamos uma revolução na forma como você se conectar ao mundo. Nascidos da essência da juventude e da liberdade, trazemos uma conexão de fibra óptica que vai além da velocidade. Descomplicamos o seu acesso à internet, acabando com contratos longos e oferecendo liberdade total."
   },
   {
     icon: "mage:light-bulb",
     title: "Visão", 
-    description: "Ser a provedora de telecomunicações líder em Osasco, reconhecida pela excelência em nossos serviços e por impulsionar a conectividade local."
+    description: "Na Massa acreditamos que o melhor contrato é um bom serviço e uma experiência Top. Seja para trabalhar, estudar, ou simplesmente curtir o melhor do entretenimento online, a Massa Internet está aqui para transformar sua experiência digital. Internet com liberdade total é Massa."
   },
   {
     icon: "fa:diamond",
     title: "Valores",
-    description: "Nossos valores na JMS Telecom são foco no cliente, agilidade e qualidade nos serviços, constante inovação e total transparência em nossas relações."
+    description: "Nossa equipe é tão massa quanto a conexão que oferecemos. Somos uma empresa 100% capixaba, nascida na terra do Espírito Santo, comprometida com a inovação e o bom atendimento. Combinamos expertise técnica e entusiasmo para construir uma conexão que vai além da velocidade da fibra óptica. Nosso objetivo é criar experiências encantadoras para nossos clientes, garantindo uma internet rápida, estável e sem fidelidade."
   }
 ];
 
