@@ -18,7 +18,7 @@ const planos = [
       { image: "/images/hbo.png", text: "HBO Max", name: "hbo", price: 20.00 },
       { image: "/images/globoplay.png", text: "Globoplay", name: "globoplay", price: 24.90 },
       { image: "/images/premiere.png", text: "Premiere", name: "premiere", price: 29.90 },
-      { image: "/images/paramount.png", text: "Paramount+", name: "paramount", price: 0 },
+      { image: "/images/paramount.png", text: "Paramount+", name: "paramount", price: 9.90 },
       { image: "/images/semfidelidade.png", text: "Sem fidelidade", name: "semfidelidade", price: 15.00 }
     ]
   },
@@ -54,7 +54,7 @@ const planos = [
     options: [
       { image: "/images/globoplay.png", text: "Globoplay", name: "globoplay", price: 12.00 },
       { image: "/images/premiere.png", text: "Premiere", name: "premiere", price: 15.00 },
-      { image: "/images/paramount.png", text: "Paramount+", name: "paramount", price: 0 },
+      { image: "/images/paramount.png", text: "Paramount+", name: "paramount", price: 9.90 },
       { image: "/images/semfidelidade.png", text: "Sem Fidelidade", name: "semfidelidade", price: 15.00 }
     ]
   }
@@ -145,8 +145,10 @@ export default function Planos() {
                   <div key={optionIndex} className="flex flex-row gap-3 md:gap-4 items-center justify-between border-2 border-black px-2 py-2 md:py-3 rounded-lg">
                     <img src={option.image} alt={option.text} className="w-10 h-10 md:w-12 md:h-12 rounded-full" />
                     <div className="flex-1">
-                      <p className="text-xs md:text-2sm text-primary">{option.text}</p>
-                      
+                      <p className="text-xs md:text-2sm text-primary font-bold">{option.text}</p>
+                      {planoIndex === 0 && option.name === "hbo" && (
+                        <p className="text-xs text-yellow-600 font-semibold">Aplicativos não inclusos</p>
+                      )}
                     </div>
                     <Switch 
                       checked={selectedSVAs[`${planoIndex}-${option.name}`] || false}
