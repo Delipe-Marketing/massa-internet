@@ -88,12 +88,16 @@ export default function Header() {
           </a>
           <a
             href="https://www.instagram.com/massainternet/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-8 h-8 bg-secondary font-bold rounded-full flex justify-center items-center hover:scale-110 transition-all duration-300"
           >
             <Icon icon="mdi:instagram" className="text-2xl" />
           </a>
           <a
             href="https://www.facebook.com/masssainternetoficial"
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-8 h-8 bg-secondary font-bold rounded-full flex justify-center items-center hover:scale-110 transition-all duration-300"
           >
             <Icon icon="mdi:facebook" className="text-2xl" />
