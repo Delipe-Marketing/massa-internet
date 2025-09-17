@@ -79,6 +79,8 @@ export default function Header() {
         <div className="max-lg:hidden md:flex flex-row gap-2 items-center text-white">
           <a
             href="https://wa.me/5508005918681?text=Olá, vim pelo site e gostaria de contratar um plano"
+            target="_blank"
+            rel="noopener noreferrer"
             className="h-8 bg-secondary rounded-full flex justify-center items-center gap-2 px-6 text-sm hover:scale-110 transition-all duration-300"
           >
             <Icon icon="mdi:whatsapp" className="text-xl" />
