@@ -26,7 +26,7 @@ export default function Header() {
   return (
     <header>
       <div className="w-full h-10 md:h-12 bg-primary px-4 md:px-32 flex justify-between items-center text-white py-2">
-        <a href="https://wa.me/5508005918681?text=Olá, vim pelo site" className="flex flex-row gap-1 md:gap-2 items-center text-sm md:text-base">
+        <a href="https://wa.me/5508005918681?text=Olá, vim pelo site" target="_blank" rel="noopener noreferrer" className="flex flex-row gap-1 md:gap-2 items-center text-sm md:text-base">
           <Icon icon="mdi:whatsapp" className="text-xl md:text-2xl" />
           <span className="hidden md:inline">0800 591 8681</span>
           <span className="md:hidden">0800</span>
