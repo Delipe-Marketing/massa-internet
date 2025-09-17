@@ -15,11 +15,11 @@ const planos = [
       { Icon: "mynaui:percentage-waves-solid", text: ["Desconto de 10%", "na conta de energia"] }
     ],
     options: [
-      { image: "/images/hbo.png", text: "HBO Max", name: "hbo" },
-      { image: "/images/globoplay.png", text: "Globoplay", name: "globoplay" },
-      { image: "/images/premiere.png", text: "Premiere", name: "premiere" },
-      { image: "/images/paramount.png", text: "Paramount+", name: "paramount" },
-      { image: "/images/semfidelidade.png", text: "Sem fidelidade", name: "semfidelidade" }
+      { image: "/images/hbo.png", text: "HBO Max", name: "hbo", price: 20.00 },
+      { image: "/images/globoplay.png", text: "Globoplay", name: "globoplay", price: 24.90 },
+      { image: "/images/premiere.png", text: "Premiere", name: "premiere", price: 29.90 },
+      { image: "/images/paramount.png", text: "Paramount+", name: "paramount", price: 0 },
+      { image: "/images/semfidelidade.png", text: "Sem fidelidade", name: "semfidelidade", price: 15.00 }
     ]
   },
   {
@@ -34,10 +34,10 @@ const planos = [
       { Icon: "mynaui:percentage-waves-solid", text: ["Desconto de 10%", "na conta de energia"] }
     ],
     options: [
-      { image: "/images/hbo.png", text: "HBO Max", name: "hbo" },
-      { image: "/images/globoplay.png", text: "Globoplay", name: "globoplay" },
-      { image: "/images/premiere.png", text: "Premiere", name: "premiere" },
-      { image: "/images/semfidelidade.png", text: "Sem Fidelidade", name: "semfidelidade" }
+      { image: "/images/hbo.png", text: "HBO Max", name: "hbo", price: 10.00 },
+      { image: "/images/globoplay.png", text: "Globoplay", name: "globoplay", price: 12.00 },
+      { image: "/images/premiere.png", text: "Premiere", name: "premiere", price: 15.00 },
+      { image: "/images/semfidelidade.png", text: "Sem Fidelidade", name: "semfidelidade", price: 15.00 }
     ]
   },
   {
@@ -52,10 +52,10 @@ const planos = [
       { Icon: "mynaui:percentage-waves-solid", text: ["Desconto de 10%", "na conta de energia"] }
     ],
     options: [
-      { image: "/images/globoplay.png", text: "Globoplay", name: "globoplay" },
-      { image: "/images/premiere.png", text: "Premiere", name: "premiere" },
-      { image: "/images/paramount.png", text: "Paramount+", name: "paramount" },
-      { image: "/images/semfidelidade.png", text: "Sem Fidelidade", name: "semfidelidade" }
+      { image: "/images/globoplay.png", text: "Globoplay", name: "globoplay", price: 12.00 },
+      { image: "/images/premiere.png", text: "Premiere", name: "premiere", price: 15.00 },
+      { image: "/images/paramount.png", text: "Paramount+", name: "paramount", price: 0 },
+      { image: "/images/semfidelidade.png", text: "Sem Fidelidade", name: "semfidelidade", price: 15.00 }
     ]
   }
 ]
@@ -75,6 +75,30 @@ export default function Planos() {
     return planos[planoIndex].options.filter(option => 
       selectedSVAs[`${planoIndex}-${option.name}`]
     ).map(option => option.text);
+  };
+
+  const calculateTotalPrice = (planoIndex: number) => {
+    const plano = planos[planoIndex];
+    const basePrice = parseFloat(plano.price.replace(',', '.'));
+    
+    const selectedOptions = plano.options.filter(option => 
+      selectedSVAs[`${planoIndex}-${option.name}`]
+    );
+    
+    const totalSVA = selectedOptions.reduce((sum, option) => sum + option.price, 0);
+    const totalPrice = basePrice + totalSVA;
+    
+    return totalPrice.toFixed(2).replace('.', ',');
+  };
+
+  const getSelectedSVAsPrice = (planoIndex: number) => {
+    const plano = planos[planoIndex];
+    const selectedOptions = plano.options.filter(option => 
+      selectedSVAs[`${planoIndex}-${option.name}`]
+    );
+    
+    const totalSVA = selectedOptions.reduce((sum, option) => sum + option.price, 0);
+    return totalSVA;
   };
 
   return (
@@ -120,7 +144,10 @@ export default function Planos() {
                 {plano.options.map((option, optionIndex) => (
                   <div key={optionIndex} className="flex flex-row gap-3 md:gap-4 items-center justify-between border-2 border-black px-2 py-2 md:py-3 rounded-lg">
                     <img src={option.image} alt={option.text} className="w-10 h-10 md:w-12 md:h-12 rounded-full" />
-                    <p className="text-xs md:text-2sm text-primary flex-1">{option.text}</p>
+                    <div className="flex-1">
+                      <p className="text-xs md:text-2sm text-primary">{option.text}</p>
+                      
+                    </div>
                     <Switch 
                       checked={selectedSVAs[`${planoIndex}-${option.name}`] || false}
                       onCheckedChange={() => handleSVAChange(planoIndex, option.name)}
@@ -130,9 +157,11 @@ export default function Planos() {
               </div>
 
               <div className="flex flex-col items-center justify-center">
-                <p className="text-3xl md:text-5xl uniNeueHeavy text-primary mt-6 md:mt-8">R$ {plano.price}</p>
+                <div className="flex flex-col items-center">
+                  <p className="text-3xl md:text-5xl uniNeueHeavy text-primary mt-6 md:mt-8">R$ {calculateTotalPrice(planoIndex)}</p>
+                </div>
                 <a
-                  href={`https://wa.me/5508005918681?text=Olá, vim pelo site e gostaria de contratar o plano de ${plano.speed} ${plano.unit}${getSelectedSVAsForPlano(planoIndex).length > 0 ? ' com ' + getSelectedSVAsForPlano(planoIndex).join(', ') : ''}`}
+                  href={`https://wa.me/5508005918681?text=Olá, vim pelo site e gostaria de contratar o plano de ${plano.speed} ${plano.unit}${getSelectedSVAsForPlano(planoIndex).length > 0 ? ' com ' + getSelectedSVAsForPlano(planoIndex).join(', ') : ''} - Total: R$ ${calculateTotalPrice(planoIndex)}`}
                   className="text-sm md:text-lg text-primary text-center mt-4 font-bold bg-secondary rounded-full px-8 md:px-12 py-2 hover:scale-105 transition-all duration-300"
                 >
                   Contrate agora!
