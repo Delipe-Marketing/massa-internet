@@ -9,7 +9,6 @@ const planos = [
     price: "89,00",
     feature: null,
     benefits: [
-      { Icon: "material-symbols:wifi-rounded", text: ["Wi-Fi 6"] },
       { Icon: "mdi:television", text: ["65 Canais de TV"] },
       { Icon: "mdi:support", text: ["Suporte proativo"] },
       { Icon: "mynaui:percentage-waves-solid", text: ["Desconto de 10%", "na conta de energia"] }
@@ -28,7 +27,6 @@ const planos = [
     price: "108,99",
     feature: { image: "/images/paramount.png", text: ["Paramount+ por", "6 meses grátis"] },
     benefits: [
-      { Icon: "material-symbols:wifi-rounded", text: ["Wi-Fi 6"] },
       { Icon: "mdi:television", text: ["65 Canais de TV"] },
       { Icon: "mdi:support", text: ["Suporte proativo"] },
       { Icon: "mynaui:percentage-waves-solid", text: ["Desconto de 10%", "na conta de energia"] }
@@ -144,17 +142,16 @@ export default function Planos() {
                 Ative abaixo no seu plano:
               </h1>
 
-              <div className="flex flex-col gap-2 mt-4">
+              <div className="flex flex-col gap-2 mt-4 max-lg:w-2/3  mx-auto">
                 {plano.options.map((option, optionIndex) => (
 
-                  <div key={optionIndex} className="flex flex-col  items-center justify-between border-2 border-black px-2 py-2 md:py-3 rounded-lg">
+                  <div key={optionIndex} className="flex flex-col items-center justify-between border-2 border-black px-2 py-2 md:py-3 rounded-lg">
                     
-                    <div className="flex flex-row gap-3 md:gap-12 items-center justify-between">
+                    <div className="flex flex-row items-center justify-between w-full">
                       <img src={option.image} alt={option.text} className="w-10 h-10 md:w-12 md:h-12 rounded-full" />
-                      <div className="flex-1">
-
+                        
                         <p className="text-xs md:text-2sm text-primary font-bold">{option.text}</p>
-                      </div>
+                    
                       <Switch
                         checked={selectedSVAs[`${planoIndex}-${option.name}`] || false}
                         onCheckedChange={() => handleSVAChange(planoIndex, option.name)}
