@@ -85,7 +85,7 @@ export default function Header() {
             Quero Assinar
           </a>
           <a
-            href="https://www.instagram.com/massainternetoficial/"
+            href="https://www.instagram.com/massainternet/"
             className="w-8 h-8 bg-secondary font-bold rounded-full flex justify-center items-center hover:scale-110 transition-all duration-300"
           >
             <Icon icon="mdi:instagram" className="text-2xl" />

@@ -4,17 +4,17 @@ const principios = [
   {
     icon: "material-symbols:target",
     title: "Missão",
-    description: "Não somos apenas um provedor; representamos uma revolução na forma como você se conectar ao mundo. Nascidos da essência da juventude e da liberdade, trazemos uma conexão de fibra óptica que vai além da velocidade. Descomplicamos o seu acesso à internet, acabando com contratos longos e oferecendo liberdade total."
+    description: "Transformar a experiência digital dos nossos clientes, oferecendo internet rápida, estável e sem fidelidade, descomplicando o acesso e proporcionando liberdade total para trabalhar, estudar ou curtir o melhor do entretenimento online."
   },
   {
     icon: "mage:light-bulb",
     title: "Visão", 
-    description: "Na Massa acreditamos que o melhor contrato é um bom serviço e uma experiência Top. Seja para trabalhar, estudar, ou simplesmente curtir o melhor do entretenimento online, a Massa Internet está aqui para transformar sua experiência digital. Internet com liberdade total é Massa."
+    description: "Ser referência em inovação, atendimento e liberdade no acesso à internet, criando experiências encantadoras e construindo conexões que vão além da velocidade da fibra óptica."
   },
   {
     icon: "fa:diamond",
     title: "Valores",
-    description: "Nossa equipe é tão massa quanto a conexão que oferecemos. Somos uma empresa 100% capixaba, nascida na terra do Espírito Santo, comprometida com a inovação e o bom atendimento. Combinamos expertise técnica e entusiasmo para construir uma conexão que vai além da velocidade da fibra óptica. Nosso objetivo é criar experiências encantadoras para nossos clientes, garantindo uma internet rápida, estável e sem fidelidade."
+    description: "Compromisso com a qualidade, atendimento próximo e humanizado, inovação constante, liberdade, transparência e paixão por criar experiências incríveis para nossos clientes."
   }
 ];
 

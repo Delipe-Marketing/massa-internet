@@ -2,19 +2,19 @@ import { Icon } from "@iconify/react";
 
 const principios = [
   {
-    titulo: "Nossa missão",
-    descricao: "Transformar a experiência digital dos nossos clientes, oferecendo internet rápida, estável e sem fidelidade, descomplicando o acesso e proporcionando liberdade total para trabalhar, estudar ou curtir o melhor do entretenimento online.",
-    icone: "material-symbols:arrow-right"
+    icone: "material-symbols:arrow-right",
+    titulo: "Missão",
+    descricao: "Transformar a experiência digital dos nossos clientes, oferecendo internet rápida, estável e sem fidelidade, descomplicando o acesso e proporcionando liberdade total para trabalhar, estudar ou curtir o melhor do entretenimento online."
   },
   {
-    titulo: "Nossa visão",
-    descricao: "Ser referência em inovação, atendimento e liberdade no acesso à internet, criando experiências encantadoras e construindo conexões que vão além da velocidade da fibra óptica.",
-    icone: "material-symbols:arrow-right"
+    icone: "material-symbols:arrow-right",
+    titulo: "Visão",
+    descricao: "Ser referência em inovação, atendimento e liberdade no acesso à internet, criando experiências encantadoras e construindo conexões que vão além da velocidade da fibra óptica."
   },
   {
-    titulo: "Nossos valores",
-    descricao: "Compromisso com a qualidade, atendimento próximo e humanizado, inovação constante, liberdade, transparência e paixão por criar experiências incríveis para nossos clientes.",
-    icone: "material-symbols:arrow-right"
+    icone: "material-symbols:arrow-right",
+    titulo: "Valores",
+    descricao: "Compromisso com a qualidade, atendimento próximo e humanizado, inovação constante, liberdade, transparência e paixão por criar experiências incríveis para nossos clientes."
   }
 ];
 
