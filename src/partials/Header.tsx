@@ -31,7 +31,7 @@ export default function Header() {
           <span className="hidden md:inline">0800 591 8681</span>
           <span className="md:hidden">0800</span>
         </a>
-        <a href="#" className="flex flex-row gap-1 md:gap-2 items-center text-sm md:text-base">
+        <a href="https://massainternet.sgp.tsmx.com.br/accounts/central/login" className="flex flex-row gap-1 md:gap-2 items-center text-sm md:text-base">
           <Icon icon="line-md:person-add-filled" className="text-xl md:text-2xl" />
           <span className="hidden md:inline">Central do Assinante</span>
           <span className="md:hidden">Central</span>
