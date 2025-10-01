@@ -29,7 +29,7 @@ export default function QuemSomos() {
         </h2>
         
         <p className="text-primary text-xs leading-relaxed mb-6 md:mb-8 md:pl-4 text-center md:text-left">
-          <span className="text-secondary font-semibold">Provedor 100% Capixaba:</span> representamos uma revolução na forma como você se conectar ao mundo. Nascidos da essência da juventude e da liberdade, trazemos uma conexão de fibra óptica que vai além da velocidade.
+          <span className="text-secondary font-semibold">Provedor 100% Capixaba:</span> representamos uma revolução na forma como você se conecta ao mundo. Nascidos da essência da juventude e da liberdade, trazemos uma conexão de fibra óptica que vai além da velocidade.
         </p>
         
         <div className="space-y-4 md:space-y-6 md:pl-4">

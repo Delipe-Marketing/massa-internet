@@ -3,7 +3,7 @@ const menu = [
   { text: "Planos", link: "/planos" },
   { text: "Sobre nós", link: "/sobre" },
   { text: "Fale Conosco", link: "/contato" },
-  { text: "Área do Cliente", link: "#" }
+  { text: "Área do Cliente", link: "https://massainternet.sgp.tsmx.com.br/accounts/central/login" }
 ]
 
 const servicos = [
