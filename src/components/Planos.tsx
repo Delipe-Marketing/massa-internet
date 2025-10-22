@@ -9,7 +9,7 @@ const planos = [
     price: "89,00",
     feature: null,
     benefits: [
-      { Icon: "mdi:television", text: ["65 Canais de TV"] },
+      { Icon: "mdi:television", text: ["80 Canais de TV"] },
       { Icon: "mdi:support", text: ["Suporte proativo"] },
       { Icon: "mynaui:percentage-waves-solid", text: ["Desconto de 10%", "na conta de energia"] }
     ],
@@ -27,7 +27,7 @@ const planos = [
     price: "108,99",
     feature: { image: "/images/paramount.png", text: ["Paramount+ por", "6 meses grátis"] },
     benefits: [
-      { Icon: "mdi:television", text: ["65 Canais de TV"] },
+      { Icon: "mdi:television", text: ["80 Canais de TV"] },
       { Icon: "mdi:support", text: ["Suporte proativo"] },
       { Icon: "mynaui:percentage-waves-solid", text: ["Desconto de 10%", "na conta de energia"] }
     ],
@@ -45,7 +45,7 @@ const planos = [
     feature: { image: "/images/hbo.png", text: ["HBO MAX por", "6 meses grátis"] },
     benefits: [
       { Icon: "material-symbols:wifi-rounded", text: ["Wi-Fi 6"] },
-      { Icon: "mdi:television", text: ["65 Canais de TV"] },
+      { Icon: "mdi:television", text: ["80 Canais de TV"] },
       { Icon: "mdi:support", text: ["Suporte proativo"] },
       { Icon: "mynaui:percentage-waves-solid", text: ["Desconto de 10%", "na conta de energia"] }
     ],
