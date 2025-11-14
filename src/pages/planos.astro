@@ -1,19 +1,25 @@
 ---
-import Layout from '@/layouts/Layout.astro';
-import Banner from '@/components/Banner.tsx';
-import Planos from '@/components/Planos.tsx';
-import CTA from '@/components/CTA.tsx';
-import FaleConosco from '@/components/FaleConosco.tsx';
+import Layout from "@/layouts/Layout.astro";
+import Banner from "@/components/Banner.tsx";
+import Planos from "@/components/Planos.tsx";
+import CTA from "@/components/CTA.tsx";
+import FaleConosco from "@/components/FaleConosco.tsx";
 ---
 
 <Layout title="Planos - Massa Internet">
   <main>
-    <Banner href="/banners/Home.mp4" />
-    
+    <!-- <Banner href="/banners/Home.mp4" client:only/> -->
+    <img src="/banners/HomeBlack.png" alt="Home Black" class="max-lg:hidden" />
+    <img
+      src="/banners/HomeBlackMobile.png"
+      alt="Home Black Mobile"
+      class="hidden max-lg:block"
+    />
+
     <Planos client:load />
-    
+
     <img src="/banners/Banner.png" class="mt-16" />
-    
+
     <CTA client:load />
 
     <FaleConosco client:load />
