@@ -6,7 +6,7 @@ const planos = [
   {
     speed: "550",
     unit: "mega",
-    price: "89,00",
+    price: "89,99",
     feature: null,
     benefits: [
       { Icon: "mdi:television", text: ["80 Canais de TV"] },
@@ -42,7 +42,7 @@ const planos = [
   {
     speed: "920",
     unit: "mega",
-    price: "129,90",
+    price: "129,99",
     feature: { image: "/images/hbo.png", text: ["HBO MAX por", "6 meses grátis"] },
     benefits: [
       { Icon: "material-symbols:wifi-rounded", text: ["Wi-Fi 6"] },
@@ -174,7 +174,7 @@ export default function Planos() {
                 >
                   Contrate agora!
                 </a>
-                <p className="text-xs text-primary text-center font-bold mt-2">Consulte condições e viabilidade*</p>
+                <a href="#" className="text-xs hover:scale-105 transition-all duration-300 text-primary text-center font-bold mt-2">Consulte condições e viabilidade*</a>
               </div>
             </div>
           </div>

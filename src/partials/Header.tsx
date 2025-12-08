@@ -1,10 +1,14 @@
 import { Icon } from "@iconify/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const header = [
   {
     text: "Home",
     link: "/"
+  },
+  {
+    text: "Indique e Ganhe",
+    link: "/#indique-ganhe"
   },
   {
     text: "Planos",
@@ -23,6 +27,41 @@ const header = [
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const scrollToIndique = () => {
+    let attempts = 0;
+    const tryScroll = () => {
+      const element = document.getElementById("indique-ganhe");
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+        return;
+      }
+      attempts += 1;
+      if (attempts < 8) setTimeout(tryScroll, 200);
+    };
+    // pequeno delay para garantir render
+    setTimeout(tryScroll, 300);
+  };
+
+  useEffect(() => {
+    if (window.location.hash === "#indique-ganhe") {
+      scrollToIndique();
+    }
+  }, []);
+
+  const handleIndiqueGanheClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const isHomePage = window.location.pathname === '/';
+
+    // Se não estiver na home, navega para a home com âncora e deixa o navegador cuidar do scroll
+    if (!isHomePage) {
+      window.location.href = '/#indique-ganhe';
+      return;
+    }
+
+    // Aguarda um pouco para garantir que o banner esteja carregado antes de scrollar
+    scrollToIndique();
+  };
+
   return (
     <header>
       <div className="w-full h-10 md:h-12 bg-primary px-4 md:px-32 flex justify-between items-center text-white py-2">
@@ -40,14 +79,18 @@ export default function Header() {
 
       <div className="flex justify-between items-center px-4 md:px-44 py-4 border-b-3 border-primary relative">
         <a href="/" className="flex justify-center items-center hover:scale-110 transition-all duration-300">
-          <img src="/images/Logo.svg" alt="Logo" className="w-40 md:w-60" />
+          <img src="/images/LogoNatal.png" alt="Logo" className="w-40 md:w-60" />
         </a>
 
         {/* Menu Desktop */}
         <ul className="hidden md:flex flex-row gap-8">
           {header.map((item) => (
             <li key={item.text} className="hover:scale-115 transition-all duration-300">
-              <a href={item.link} className="text-black">{item.text}</a>
+              {item.text === "Indique e Ganhe" ? (
+                <a href={item.link} onClick={handleIndiqueGanheClick} className="text-black">{item.text}</a>
+              ) : (
+                <a href={item.link} className="text-black">{item.text}</a>
+              )}
             </li>
           ))}
         </ul>
@@ -68,7 +111,11 @@ export default function Header() {
             <ul className="flex flex-col gap-4 p-4">
               {header.map((item) => (
                 <li key={item.text}>
-                  <a href={item.link} className="text-black text-lg block py-2">{item.text}</a>
+                  {item.text === "Indique e Ganhe" ? (
+                    <a href={item.link} onClick={handleIndiqueGanheClick} className="text-black text-lg block py-2">{item.text}</a>
+                  ) : (
+                    <a href={item.link} className="text-black text-lg block py-2">{item.text}</a>
+                  )}
                 </li>
               ))}
             </ul>
