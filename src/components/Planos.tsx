@@ -174,7 +174,7 @@ export default function Planos() {
                 >
                   Contrate agora!
                 </a>
-                <a href="#" className="text-xs hover:scale-105 transition-all duration-300 text-primary text-center font-bold mt-2">Consulte condições e viabilidade*</a>
+                <a href="/PDF/consulte_condicoes.pdf" className="text-xs hover:scale-105 transition-all duration-300 text-primary text-center font-bold mt-2">Consulte condições e viabilidade*</a>
               </div>
             </div>
           </div>
