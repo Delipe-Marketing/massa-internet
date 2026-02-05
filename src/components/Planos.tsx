@@ -235,7 +235,7 @@ export default function Planos() {
             <h2 className="text-sm md:text-2sm text-primary text-center md:text-left">Assine os melhores planos de internet fibra com Wi-Fi grátis e tenha velocidade e estabilidade.</h2>
           </div>
 
-          <TabsList className="flex flex-row gap-2 md:gap-3 w-full md:w-auto bg-transparent p-0">
+          <TabsList className="flex flex-row max-lg:flex-col max-lg:my-16 gap-2 md:gap-3 w-full md:w-auto bg-transparent p-0">
             <TabsTrigger 
               value="residencial" 
               className="rounded-full px-4 md:px-6 py-2 md:py-3 text-xs md:text-sm font-bold uppercase transition-all duration-300 border-2 bg-transparent text-primary border-primary data-[state=active]:!bg-primary data-[state=active]:!text-white data-[state=active]:!border-primary data-[state=active]:shadow-lg data-[state=active]:shadow-primary/50 hover:scale-105"
