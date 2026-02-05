@@ -21,7 +21,7 @@ const principios = [
 export default function QuemSomos() {
   return (
     <div className="w-full flex flex-col md:flex-row items-center justify-center px-4 md:px-16 py-10 md:py-20 bg-white">
-      <img src="/images/Logo.svg" alt="Quem somos" className="w-full max-w-80 md:w-120 border-3 border-secondary rounded-4xl px-4 md:px-8 py-20 md:py-30 mb-8 md:mb-0" />
+      <img src="/images/LogoCarnaval.png" alt="Logo Carnaval" className="w-full max-w-80 md:w-120 border-3 border-secondary rounded-4xl px-4 md:px-8 py-20 md:py-30 mb-8 md:mb-0" />
 
       <div className="flex-1 max-w-2xl md:ml-4 px-4 md:px-0">
         <h2 className="text-primary text-3xl md:text-5xl mb-4 text-center md:text-left">
