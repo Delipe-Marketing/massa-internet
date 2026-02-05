@@ -18,7 +18,7 @@ const planosResidenciais = [
       { image: "/images/hbo.png", text: "HBO Max", name: "hbo", price: 20.00 },
       { image: "/images/globoplay.png", text: "Globoplay", name: "globoplay", price: 24.90 },
       { image: "/images/premiere.png", text: "Premiere", name: "premiere", price: 29.90 },
-      { image: "/images/paramount.png", text: "Paramount+", name: "paramount", price: 9.90 },
+      { image: "/images/watch.svg", text: "Watch", name: "watch", price: 9.90 },
       { image: "/images/semfidelidade.png", text: "Sem fidelidade", name: "semfidelidade", price: 15.00 }
     ]
   },
@@ -26,7 +26,7 @@ const planosResidenciais = [
     speed: "710",
     unit: "mega",
     price: "108,99",
-    feature: { image: "/images/paramount.png", text: ["Paramount+ por", "6 meses grátis"] },
+    feature: { image: "/images/watch.svg", text: ["Watch por", "6 meses grátis"] },
     benefits: [
       { Icon: "material-symbols:wifi-rounded", text: ["Wi-Fi 6"] },
       { Icon: "mdi:television", text: ["80 Canais de TV"] },
@@ -54,7 +54,7 @@ const planosResidenciais = [
     options: [
       { image: "/images/globoplay.png", text: "Globoplay", name: "globoplay", price: 12.00 },
       { image: "/images/premiere.png", text: "Premiere", name: "premiere", price: 15.00 },
-      { image: "/images/paramount.png", text: "Paramount+", name: "paramount", price: 9.90 },
+      { image: "/images/watch.svg", text: "Watch", name: "watch", price: 9.90 },
       { image: "/images/semfidelidade.png", text: "Sem Fidelidade", name: "semfidelidade", price: 15.00 }
     ]
   }
