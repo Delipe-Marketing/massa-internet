@@ -74,8 +74,7 @@ const planosComerciais = [
       { image: "/images/Cam.svg", text: "Câmera IP", name: "camera", price: 39.90 },
       { image: "/images/telefonia.svg", text: "Seliga Fone", name: "seliga-fone", price: 29.90 },
       { image: "/images/wifi.svg", text: "Wi-Fi Inteligente", name: "wifi-inteligente", price: 29.90 },
-      { image: "/images/nobreak.svg", text: "Nobreak", name: "nobreak", price: 29.90 },
-      { image: "/images/mobile.svg", text: "Seliga Cell 20GB", name: "seliga-cell", price: 40.00 }
+      { image: "/images/nobreak.svg", text: "Nobreak", name: "nobreak", price: 29.90 }
     ]
   },
   {
@@ -91,8 +90,7 @@ const planosComerciais = [
       { image: "/images/Cam.svg", text: "Câmera IP", name: "camera", price: 39.90 },
       { image: "/images/telefonia.svg", text: "Seliga Fone", name: "seliga-fone", price: 29.90 },
       { image: "/images/wifi.svg", text: "Wi-Fi Inteligente", name: "wifi-inteligente", price: 29.90 },
-      { image: "/images/nobreak.svg", text: "Nobreak", name: "nobreak", price: 29.90 },
-      { image: "/images/mobile.svg", text: "Seliga Cell 20GB", name: "seliga-cell", price: 40.00 }
+      { image: "/images/nobreak.svg", text: "Nobreak", name: "nobreak", price: 29.90 }
     ]
   },
   {
@@ -108,8 +106,7 @@ const planosComerciais = [
       { image: "/images/Cam.svg", text: "Câmera IP", name: "camera", price: 39.90 },
       { image: "/images/telefonia.svg", text: "Seliga Fone", name: "seliga-fone", price: 29.90 },
       { image: "/images/wifi.svg", text: "Wi-Fi Inteligente", name: "wifi-inteligente", price: 29.90 },
-      { image: "/images/nobreak.svg", text: "Nobreak", name: "nobreak", price: 29.90 },
-      { image: "/images/mobile.svg", text: "Seliga Cell 20GB", name: "seliga-cell", price: 40.00 }
+      { image: "/images/nobreak.svg", text: "Nobreak", name: "nobreak", price: 29.90 }
     ]
   }
 ]
