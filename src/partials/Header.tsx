@@ -4,24 +4,24 @@ import { useEffect, useState } from "react";
 const header = [
   {
     text: "Home",
-    link: "/"
+    link: "/",
   },
   {
     text: "Indique e Ganhe",
-    link: "/#indique-ganhe"
+    link: "/#indique-ganhe",
   },
   {
     text: "Planos",
-    link: "/planos"
+    link: "/planos",
   },
   {
     text: "Sobre nós",
-    link: "/sobre"
+    link: "/sobre",
   },
   {
     text: "Fale Conosco",
-    link: "/contato"
-  }
+    link: "/contato",
+  },
 ];
 
 export default function Header() {
@@ -50,11 +50,11 @@ export default function Header() {
 
   const handleIndiqueGanheClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    const isHomePage = window.location.pathname === '/';
+    const isHomePage = window.location.pathname === "/";
 
     // Se não estiver na home, navega para a home com âncora e deixa o navegador cuidar do scroll
     if (!isHomePage) {
-      window.location.href = '/#indique-ganhe';
+      window.location.href = "/#indique-ganhe";
       return;
     }
 
@@ -65,38 +65,63 @@ export default function Header() {
   return (
     <header>
       <div className="w-full h-10 md:h-12 bg-primary px-4 md:px-32 flex justify-between items-center text-white py-2">
-        <a href="https://wa.me/5508005918681?text=Olá, vim pelo site" target="_blank" rel="noopener noreferrer" className="flex flex-row gap-1 md:gap-2 items-center text-sm md:text-base">
+        <a
+          href="https://wa.me/5508005918681?text=Olá, vim pelo site"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex flex-row gap-1 md:gap-2 items-center text-sm md:text-base"
+        >
           <Icon icon="mdi:whatsapp" className="text-xl md:text-2xl" />
           <span className="hidden md:inline">0800 591 8681</span>
           <span className="md:hidden">0800</span>
         </a>
-        <a href="https://massainternet.sgp.tsmx.com.br/accounts/central/login" className="flex flex-row gap-1 md:gap-2 items-center text-sm md:text-base">
-          <Icon icon="line-md:person-add-filled" className="text-xl md:text-2xl" />
+        <a
+          href="https://massainternet.sgp.tsmx.com.br/accounts/central/login"
+          className="flex flex-row gap-1 md:gap-2 items-center text-sm md:text-base"
+        >
+          <Icon
+            icon="line-md:person-add-filled"
+            className="text-xl md:text-2xl"
+          />
           <span className="hidden md:inline">Central do Assinante</span>
           <span className="md:hidden">Central</span>
         </a>
       </div>
 
       <div className="flex justify-between items-center px-4 md:px-44 py-4 border-b-3 border-primary relative">
-        <a href="/" className="flex justify-center items-center hover:scale-110 transition-all duration-300">
-          <img src="/images/LogoCarnaval.png" alt="Logo Carnaval" className="w-40 md:w-60" />
+        <a
+          href="/"
+          className="flex justify-center items-center hover:scale-110 transition-all duration-300"
+        >
+          <img src="/images/Logo.svg" className="w-40 md:w-60" />
         </a>
 
         {/* Menu Desktop */}
         <ul className="hidden md:flex flex-row gap-8">
           {header.map((item) => (
-            <li key={item.text} className="hover:scale-115 transition-all duration-300">
+            <li
+              key={item.text}
+              className="hover:scale-115 transition-all duration-300"
+            >
               {item.text === "Indique e Ganhe" ? (
-                <a href={item.link} onClick={handleIndiqueGanheClick} className="text-black">{item.text}</a>
+                <a
+                  href={item.link}
+                  onClick={handleIndiqueGanheClick}
+                  className="text-black"
+                >
+                  {item.text}
+                </a>
               ) : (
-                <a href={item.link} className="text-black">{item.text}</a>
+                <a href={item.link} className="text-black">
+                  {item.text}
+                </a>
               )}
             </li>
           ))}
         </ul>
 
         {/* Botão Mobile Menu */}
-        <button 
+        <button
           className="md:hidden flex flex-col gap-1"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
@@ -112,9 +137,20 @@ export default function Header() {
               {header.map((item) => (
                 <li key={item.text}>
                   {item.text === "Indique e Ganhe" ? (
-                    <a href={item.link} onClick={handleIndiqueGanheClick} className="text-black text-lg block py-2">{item.text}</a>
+                    <a
+                      href={item.link}
+                      onClick={handleIndiqueGanheClick}
+                      className="text-black text-lg block py-2"
+                    >
+                      {item.text}
+                    </a>
                   ) : (
-                    <a href={item.link} className="text-black text-lg block py-2">{item.text}</a>
+                    <a
+                      href={item.link}
+                      className="text-black text-lg block py-2"
+                    >
+                      {item.text}
+                    </a>
                   )}
                 </li>
               ))}
