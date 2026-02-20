@@ -227,7 +227,7 @@ export default function Planos() {
   };
 
   return (
-    <div className="w-full h-full flex flex-col items-center justify-center mt-12 md:mt-24 px-4 md:px-0">
+    <div className="w-full h-full flex flex-col items-center justify-center mt-12 md:mt-24 px-4 md:px-0 ">
       <Tabs defaultValue="residencial" className="w-full max-w-7xl">
         <div className="w-full flex flex-col md:flex-row justify-between items-center mb-8 md:mb-16 gap-4 md:gap-8 px-4">
           <div className="flex flex-col">
