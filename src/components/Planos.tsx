@@ -212,7 +212,7 @@ export default function Planos() {
                   <p className="text-3xl md:text-5xl uniNeueHeavy text-primary mt-6 md:mt-8">R$ {calculateTotalPrice(planoIndex, planos)}</p>
                 </div>
                 <a
-                  href={`https://wa.me/5508005918681?text=Olá, vim pelo site e gostaria de contratar o plano ${tabType} de ${plano.speed} ${plano.unit}${getSelectedSVAsForPlano(planoIndex, planos).length > 0 ? ' com ' + getSelectedSVAsForPlano(planoIndex, planos).join(', ') : ''} - Total: R$ ${calculateTotalPrice(planoIndex, planos)}`}
+                  href={`https://wa.me/5527996152427?text=Olá, vim pelo site e gostaria de contratar o plano ${tabType} de ${plano.speed} ${plano.unit}${getSelectedSVAsForPlano(planoIndex, planos).length > 0 ? ' com ' + getSelectedSVAsForPlano(planoIndex, planos).join(', ') : ''} - Total: R$ ${calculateTotalPrice(planoIndex, planos)}`}
                   className="text-sm md:text-lg text-primary text-center mt-4 font-bold bg-secondary rounded-full px-8 md:px-12 py-2 hover:scale-105 transition-all duration-300"
                 >
                   Contrate agora!
@@ -398,7 +398,7 @@ export default function Planos() {
               </div>
 
               <div className="flex justify-center mt-8">
-                <a href="https://api.whatsapp.com/send/?phone=5508005918681&text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20or%C3%A7amento%20para%20o%20Plano%20Corporativo.&type=phone_number&app_absent=0">
+                <a href="https://api.whatsapp.com/send/?phone=5527996152427&text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20or%C3%A7amento%20para%20o%20Plano%20Corporativo.&type=phone_number&app_absent=0">
                   <button className="bg-secondary text-white font-bold text-lg px-12 py-4 rounded-full hover:scale-105 transition-all duration-300 shadow-lg">
                     FAÇA SEU ORÇAMENTO
                   </button>

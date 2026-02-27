@@ -32,7 +32,7 @@ export default function Footer() {
             <br /> Itaguaçu/ES
           </div>
           <h1 className="text-2xl md:text-4xl text-center md:text-left">
-            0800 591 8681
+            (27) 99615-2427
           </h1>
         </div>
 
@@ -79,7 +79,7 @@ export default function Footer() {
             </div>
             <div className="flex flex-col gap-2">
               <div className="text-sm md:text-base text-center md:text-left">
-                Whatsapp: <br /> 0800 591 8681
+                Whatsapp: <br /> (27) 99615-2427
               </div>
 
               <div className="text-sm md:text-base text-center md:text-left">

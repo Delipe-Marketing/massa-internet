@@ -66,14 +66,14 @@ export default function Header() {
     <header>
       <div className="w-full h-10 md:h-12 bg-primary px-4 md:px-32 flex justify-between items-center text-white py-2">
         <a
-          href="https://wa.me/5508005918681?text=Olá, vim pelo site"
+          href="https://wa.me/5527996152427?text=Olá, vim pelo site"
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-row gap-1 md:gap-2 items-center text-sm md:text-base"
         >
           <Icon icon="mdi:whatsapp" className="text-xl md:text-2xl" />
-          <span className="hidden md:inline">0800 591 8681</span>
-          <span className="md:hidden">0800</span>
+          <span className="hidden md:inline">(27) 99615-2427</span>
+          <span className="md:hidden">(27) 99615-2427</span>
         </a>
         <a
           href="https://massainternet.sgp.tsmx.com.br/accounts/central/login"
@@ -161,7 +161,7 @@ export default function Header() {
         {/* Botões Desktop */}
         <div className="max-lg:hidden md:flex flex-row gap-2 items-center text-white">
           <a
-            href="https://wa.me/5508005918681?text=Olá, vim pelo site e gostaria de contratar um plano"
+            href="https://wa.me/5527996152427?text=Olá, vim pelo site e gostaria de contratar um plano"
             target="_blank"
             rel="noopener noreferrer"
             className="h-8 bg-secondary rounded-full flex justify-center items-center gap-2 px-6 text-sm hover:scale-110 transition-all duration-300"
