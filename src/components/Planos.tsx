@@ -341,23 +341,25 @@ export default function Planos() {
     }
 
     const { type, plano, planoIndex } = selectedPlan;
-
-    const selectedOptions = plano.options
-      .filter((option: any) => selectedSVAs[`${planoIndex}-${option.name}`])
-      .map((option: any) => option.text)
-      .join(", ");
-
-    const selectedText = selectedOptions ? ` com ${selectedOptions}` : "";
-    const finalPrice = calculateTotalPrice(
-      planoIndex,
-      type === "residencial" ? planosResidenciais : planosComerciais,
-    );
-
-    const planMessage = `Plano ${type === "residencial" ? "Residencial" : "Comercial"} de ${plano.speed} ${plano.unit} por R$ ${finalPrice}/mês${selectedText}`;
-    const fullMessage = `Olá! Meu WhatsApp é: ${clientWhatsApp}\nGostaria de assinar o ${planMessage}.`;
-
+    let planMessage = "";
+    let fullMessage = "";
+    if (plano.isCorporativo) {
+      planMessage = `Plano Corporativo - Gostaria de fazer um orçamento personalizado.`;
+      fullMessage = `Olá! Meu WhatsApp é: ${clientWhatsApp}\n${planMessage}`;
+    } else {
+      const selectedOptions = plano.options
+        .filter((option: any) => selectedSVAs[`${planoIndex}-${option.name}`])
+        .map((option: any) => option.text)
+        .join(", ");
+      const selectedText = selectedOptions ? ` com ${selectedOptions}` : "";
+      const finalPrice = calculateTotalPrice(
+        planoIndex,
+        type === "residencial" ? planosResidenciais : planosComerciais,
+      );
+      planMessage = `Plano ${type === "residencial" ? "Residencial" : "Comercial"} de ${plano.speed} ${plano.unit} por R$ ${finalPrice}/mês${selectedText}`;
+      fullMessage = `Olá! Meu WhatsApp é: ${clientWhatsApp}\nGostaria de assinar o ${planMessage}.`;
+    }
     const whatsappLink = `https://wa.me/27996152427?text=${encodeURIComponent(fullMessage)}`;
-
     window.open(whatsappLink, "_blank");
     closePopup();
   };
@@ -671,11 +673,23 @@ export default function Planos() {
               </div>
 
               <div className="flex justify-center mt-8">
-                <a href="https://api.whatsapp.com/send/?phone=27996152427&text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20or%C3%A7amento%20para%20o%20Plano%20Corporativo.&type=phone_number&app_absent=0">
-                  <button className="bg-secondary text-white font-bold text-lg px-12 py-4 rounded-full hover:scale-105 transition-all duration-300 shadow-lg">
-                    FAÇA SEU ORÇAMENTO
-                  </button>
-                </a>
+                <button
+                  className="bg-secondary text-white font-bold text-lg px-12 py-4 rounded-full hover:scale-105 transition-all duration-300 shadow-lg"
+                  onClick={() => openPopup(
+                    "comercial",
+                    {
+                      speed: "Corporativo",
+                      unit: "",
+                      price: "0,00",
+                      options: [],
+                      benefits: [],
+                      isCorporativo: true,
+                    },
+                    0
+                  )}
+                >
+                  FAÇA SEU ORÇAMENTO
+                </button>
               </div>
             </div>
           </div>
