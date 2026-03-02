@@ -700,8 +700,11 @@ export default function Planos() {
 
       {/* Popup Modal */}
       {showPopup && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 px-2">
-          <div className="relative w-full max-w-full md:max-w-xl rounded-3xl p-6 md:p-12 shadow-2xl">
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center px-2"
+          style={{ background: "rgba(0,0,0,0.5)" }}
+        >
+          <div className="relative w-full max-w-full md:max-w-xl rounded-3xl p-6 md:p-12">
             <div className="bg-white rounded-3xl p-8 relative">
               <h2 className="text-2xl lg:text-3xl font-bold text-center mb-8 text-gray-800">
                 Falta pouco para você aproveitar!
