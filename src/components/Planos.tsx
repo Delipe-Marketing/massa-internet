@@ -675,18 +675,20 @@ export default function Planos() {
               <div className="flex justify-center mt-8">
                 <button
                   className="bg-secondary text-white font-bold text-lg px-12 py-4 rounded-full hover:scale-105 transition-all duration-300 shadow-lg"
-                  onClick={() => openPopup(
-                    "comercial",
-                    {
-                      speed: "Corporativo",
-                      unit: "",
-                      price: "0,00",
-                      options: [],
-                      benefits: [],
-                      isCorporativo: true,
-                    },
-                    0
-                  )}
+                  onClick={() =>
+                    openPopup(
+                      "comercial",
+                      {
+                        speed: "Corporativo",
+                        unit: "",
+                        price: "0,00",
+                        options: [],
+                        benefits: [],
+                        isCorporativo: true,
+                      },
+                      0,
+                    )
+                  }
                 >
                   FAÇA SEU ORÇAMENTO
                 </button>
