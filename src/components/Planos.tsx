@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react";
-import { Switch } from "@/components/ui/switch"
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
+import { Switch } from "@/components/ui/switch";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { useState } from "react";
 
 const planosResidenciais = [
@@ -12,53 +12,113 @@ const planosResidenciais = [
     benefits: [
       { Icon: "mdi:television", text: ["80 Canais de TV"] },
       { Icon: "mdi:support", text: ["Suporte proativo"] },
-      { Icon: "mynaui:percentage-waves-solid", text: ["Desconto de 10%", "na conta de energia"] }
+      {
+        Icon: "mynaui:percentage-waves-solid",
+        text: ["Desconto de 10%", "na conta de energia"],
+      },
     ],
     options: [
-      { image: "/images/hbo.png", text: "HBO Max", name: "hbo", price: 20.00 },
-      { image: "/images/globoplay.png", text: "Globoplay", name: "globoplay", price: 24.90 },
-      { image: "/images/premiere.png", text: "Premiere", name: "premiere", price: 29.90 },
-      { image: "/images/watch.svg", text: "Watch", name: "watch", price: 9.90 },
-      { image: "/images/semfidelidade.png", text: "Sem fidelidade", name: "semfidelidade", price: 15.00 }
-    ]
+      { image: "/images/hbo.png", text: "HBO Max", name: "hbo", price: 20.0 },
+      {
+        image: "/images/globoplay.png",
+        text: "Globoplay",
+        name: "globoplay",
+        price: 24.9,
+      },
+      {
+        image: "/images/premiere.png",
+        text: "Premiere",
+        name: "premiere",
+        price: 29.9,
+      },
+      { image: "/images/watch.svg", text: "Watch", name: "watch", price: 9.9 },
+      {
+        image: "/images/semfidelidade.png",
+        text: "Sem fidelidade",
+        name: "semfidelidade",
+        price: 15.0,
+      },
+    ],
   },
   {
     speed: "710",
     unit: "mega",
     price: "108,99",
-    feature: { image: "/images/watch.svg", text: ["Watch por", "6 meses grátis"] },
+    feature: {
+      image: "/images/watch.svg",
+      text: ["Watch por", "6 meses grátis"],
+    },
     benefits: [
       { Icon: "material-symbols:wifi-rounded", text: ["Wi-Fi 6"] },
       { Icon: "mdi:television", text: ["80 Canais de TV"] },
       { Icon: "mdi:support", text: ["Suporte proativo"] },
-      { Icon: "mynaui:percentage-waves-solid", text: ["Desconto de 10%", "na conta de energia"] }
+      {
+        Icon: "mynaui:percentage-waves-solid",
+        text: ["Desconto de 10%", "na conta de energia"],
+      },
     ],
     options: [
-      { image: "/images/hbo.png", text: "HBO Max", name: "hbo", price: 10.00 },
-      { image: "/images/globoplay.png", text: "Globoplay", name: "globoplay", price: 12.00 },
-      { image: "/images/premiere.png", text: "Premiere", name: "premiere", price: 15.00 },
-      { image: "/images/semfidelidade.png", text: "Sem Fidelidade", name: "semfidelidade", price: 15.00 }
-    ]
+      { image: "/images/hbo.png", text: "HBO Max", name: "hbo", price: 10.0 },
+      {
+        image: "/images/globoplay.png",
+        text: "Globoplay",
+        name: "globoplay",
+        price: 12.0,
+      },
+      {
+        image: "/images/premiere.png",
+        text: "Premiere",
+        name: "premiere",
+        price: 15.0,
+      },
+      {
+        image: "/images/semfidelidade.png",
+        text: "Sem Fidelidade",
+        name: "semfidelidade",
+        price: 15.0,
+      },
+    ],
   },
   {
     speed: "920",
     unit: "mega",
     price: "129,99",
-    feature: { image: "/images/hbo.png", text: ["HBO MAX por", "6 meses grátis"] },
+    feature: {
+      image: "/images/hbo.png",
+      text: ["HBO MAX por", "6 meses grátis"],
+    },
     benefits: [
       { Icon: "material-symbols:wifi-rounded", text: ["Wi-Fi 6"] },
       { Icon: "mdi:television", text: ["80 Canais de TV"] },
       { Icon: "mdi:support", text: ["Suporte proativo"] },
-      { Icon: "mynaui:percentage-waves-solid", text: ["Desconto de 10%", "na conta de energia"] }
+      {
+        Icon: "mynaui:percentage-waves-solid",
+        text: ["Desconto de 10%", "na conta de energia"],
+      },
     ],
     options: [
-      { image: "/images/globoplay.png", text: "Globoplay", name: "globoplay", price: 12.00 },
-      { image: "/images/premiere.png", text: "Premiere", name: "premiere", price: 15.00 },
-      { image: "/images/watch.svg", text: "Watch", name: "watch", price: 9.90 },
-      { image: "/images/semfidelidade.png", text: "Sem Fidelidade", name: "semfidelidade", price: 15.00 }
-    ]
-  }
-]
+      {
+        image: "/images/globoplay.png",
+        text: "Globoplay",
+        name: "globoplay",
+        price: 12.0,
+      },
+      {
+        image: "/images/premiere.png",
+        text: "Premiere",
+        name: "premiere",
+        price: 15.0,
+      },
+      { image: "/images/watch.svg", text: "Watch", name: "watch", price: 9.9 },
+      {
+        image: "/images/semfidelidade.png",
+        text: "Sem Fidelidade",
+        name: "semfidelidade",
+        price: 15.0,
+      },
+    ],
+  },
+];
 
 const planosComerciais = [
   {
@@ -68,14 +128,34 @@ const planosComerciais = [
     feature: null,
     benefits: [
       { Icon: "mdi:clock-outline", text: ["Atendimento 24 Horas"] },
-      { Icon: "mdi:speedometer", text: ["Internet rápida", "e estável"] }
+      { Icon: "mdi:speedometer", text: ["Internet rápida", "e estável"] },
     ],
     options: [
-      { image: "/images/Cam.svg", text: "Câmera IP", name: "camera", price: 39.90 },
-      { image: "/images/telefonia.svg", text: "Seliga Fone", name: "seliga-fone", price: 29.90 },
-      { image: "/images/wifi.svg", text: "Wi-Fi Inteligente", name: "wifi-inteligente", price: 29.90 },
-      { image: "/images/nobreak.svg", text: "Nobreak", name: "nobreak", price: 29.90 }
-    ]
+      {
+        image: "/images/Cam.svg",
+        text: "Câmera IP",
+        name: "camera",
+        price: 39.9,
+      },
+      {
+        image: "/images/telefonia.svg",
+        text: "Seliga Fone",
+        name: "seliga-fone",
+        price: 29.9,
+      },
+      {
+        image: "/images/wifi.svg",
+        text: "Wi-Fi Inteligente",
+        name: "wifi-inteligente",
+        price: 29.9,
+      },
+      {
+        image: "/images/nobreak.svg",
+        text: "Nobreak",
+        name: "nobreak",
+        price: 29.9,
+      },
+    ],
   },
   {
     speed: "710",
@@ -84,14 +164,34 @@ const planosComerciais = [
     feature: null,
     benefits: [
       { Icon: "mdi:clock-outline", text: ["Atendimento 24 Horas"] },
-      { Icon: "mdi:speedometer", text: ["Internet rápida", "e estável"] }
+      { Icon: "mdi:speedometer", text: ["Internet rápida", "e estável"] },
     ],
     options: [
-      { image: "/images/Cam.svg", text: "Câmera IP", name: "camera", price: 39.90 },
-      { image: "/images/telefonia.svg", text: "Seliga Fone", name: "seliga-fone", price: 29.90 },
-      { image: "/images/wifi.svg", text: "Wi-Fi Inteligente", name: "wifi-inteligente", price: 29.90 },
-      { image: "/images/nobreak.svg", text: "Nobreak", name: "nobreak", price: 29.90 }
-    ]
+      {
+        image: "/images/Cam.svg",
+        text: "Câmera IP",
+        name: "camera",
+        price: 39.9,
+      },
+      {
+        image: "/images/telefonia.svg",
+        text: "Seliga Fone",
+        name: "seliga-fone",
+        price: 29.9,
+      },
+      {
+        image: "/images/wifi.svg",
+        text: "Wi-Fi Inteligente",
+        name: "wifi-inteligente",
+        price: 29.9,
+      },
+      {
+        image: "/images/nobreak.svg",
+        text: "Nobreak",
+        name: "nobreak",
+        price: 29.9,
+      },
+    ],
   },
   {
     speed: "920",
@@ -100,88 +200,234 @@ const planosComerciais = [
     feature: null,
     benefits: [
       { Icon: "mdi:clock-outline", text: ["Atendimento 24 Horas"] },
-      { Icon: "mdi:speedometer", text: ["Internet rápida", "e estável"] }
+      { Icon: "mdi:speedometer", text: ["Internet rápida", "e estável"] },
     ],
     options: [
-      { image: "/images/Cam.svg", text: "Câmera IP", name: "camera", price: 39.90 },
-      { image: "/images/telefonia.svg", text: "Seliga Fone", name: "seliga-fone", price: 29.90 },
-      { image: "/images/wifi.svg", text: "Wi-Fi Inteligente", name: "wifi-inteligente", price: 29.90 },
-      { image: "/images/nobreak.svg", text: "Nobreak", name: "nobreak", price: 29.90 }
-    ]
-  }
-]
+      {
+        image: "/images/Cam.svg",
+        text: "Câmera IP",
+        name: "camera",
+        price: 39.9,
+      },
+      {
+        image: "/images/telefonia.svg",
+        text: "Seliga Fone",
+        name: "seliga-fone",
+        price: 29.9,
+      },
+      {
+        image: "/images/wifi.svg",
+        text: "Wi-Fi Inteligente",
+        name: "wifi-inteligente",
+        price: 29.9,
+      },
+      {
+        image: "/images/nobreak.svg",
+        text: "Nobreak",
+        name: "nobreak",
+        price: 29.9,
+      },
+    ],
+  },
+];
 
 export default function Planos() {
-  const [selectedSVAs, setSelectedSVAs] = useState<{ [key: string]: boolean }>({});
+  const [selectedSVAs, setSelectedSVAs] = useState<{ [key: string]: boolean }>(
+    {},
+  );
+  const [showPopup, setShowPopup] = useState(false);
+  const [selectedPlan, setSelectedPlan] = useState<{
+    type: "residencial" | "comercial";
+    plano: any;
+    planoIndex: number;
+  } | null>(null);
+  const [clientWhatsApp, setClientWhatsApp] = useState("");
 
   const handleSVAChange = (planoIndex: number, svaName: string) => {
     const key = `${planoIndex}-${svaName}`;
-    setSelectedSVAs(prev => ({
+    setSelectedSVAs((prev) => ({
       ...prev,
-      [key]: !prev[key]
+      [key]: !prev[key],
     }));
   };
 
-  const getSelectedSVAsForPlano = (planoIndex: number, planos: typeof planosResidenciais) => {
-    return planos[planoIndex].options.filter(option =>
-      selectedSVAs[`${planoIndex}-${option.name}`]
-    ).map(option => option.text);
+  const getSelectedSVAsForPlano = (
+    planoIndex: number,
+    planos: typeof planosResidenciais,
+  ) => {
+    return planos[planoIndex].options
+      .filter((option) => selectedSVAs[`${planoIndex}-${option.name}`])
+      .map((option) => option.text);
   };
 
-  const calculateTotalPrice = (planoIndex: number, planos: typeof planosResidenciais) => {
+  const calculateTotalPrice = (
+    planoIndex: number,
+    planos: typeof planosResidenciais,
+  ) => {
     const plano = planos[planoIndex];
-    const basePrice = parseFloat(plano.price.replace(',', '.'));
+    const basePrice = parseFloat(plano.price.replace(",", "."));
 
-    const selectedOptions = plano.options.filter(option =>
-      selectedSVAs[`${planoIndex}-${option.name}`]
+    const selectedOptions = plano.options.filter(
+      (option) => selectedSVAs[`${planoIndex}-${option.name}`],
     );
 
-    const totalSVA = selectedOptions.reduce((sum, option) => sum + option.price, 0);
+    const totalSVA = selectedOptions.reduce(
+      (sum, option) => sum + option.price,
+      0,
+    );
     const totalPrice = basePrice + totalSVA;
 
-    return totalPrice.toFixed(2).replace('.', ',');
+    return totalPrice.toFixed(2).replace(".", ",");
   };
 
-  const getSelectedSVAsPrice = (planoIndex: number, planos: typeof planosResidenciais) => {
+  const getSelectedSVAsPrice = (
+    planoIndex: number,
+    planos: typeof planosResidenciais,
+  ) => {
     const plano = planos[planoIndex];
-    const selectedOptions = plano.options.filter(option =>
-      selectedSVAs[`${planoIndex}-${option.name}`]
+    const selectedOptions = plano.options.filter(
+      (option) => selectedSVAs[`${planoIndex}-${option.name}`],
     );
 
-    const totalSVA = selectedOptions.reduce((sum, option) => sum + option.price, 0);
+    const totalSVA = selectedOptions.reduce(
+      (sum, option) => sum + option.price,
+      0,
+    );
     return totalSVA;
   };
 
-  const renderPlanoCards = (planos: typeof planosResidenciais, tabType: 'residencial' | 'comercial') => {
+  // Funções para o popup
+  const formatWhatsApp = (value: string): string => {
+    // Remove tudo que não é número
+    const numbers = value.replace(/\D/g, "");
+
+    // Aplica a máscara (XX) XXXXX-XXXX ou (XX) XXXX-XXXX
+    if (numbers.length <= 2) {
+      return numbers;
+    } else if (numbers.length <= 6) {
+      return `(${numbers.slice(0, 2)}) ${numbers.slice(2)}`;
+    } else if (numbers.length <= 10) {
+      return `(${numbers.slice(0, 2)}) ${numbers.slice(2, 6)}-${numbers.slice(6)}`;
+    } else {
+      return `(${numbers.slice(0, 2)}) ${numbers.slice(2, 7)}-${numbers.slice(7, 11)}`;
+    }
+  };
+
+  const handleWhatsAppChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const formatted = formatWhatsApp(e.target.value);
+    setClientWhatsApp(formatted);
+  };
+
+  const openPopup = (
+    type: "residencial" | "comercial",
+    plano: any,
+    planoIndex: number,
+  ) => {
+    setSelectedPlan({ type, plano, planoIndex });
+    setShowPopup(true);
+    setClientWhatsApp("");
+  };
+
+  const closePopup = () => {
+    setShowPopup(false);
+    setSelectedPlan(null);
+    setClientWhatsApp("");
+  };
+
+  const handleSubmitPopup = () => {
+    if (!selectedPlan || !clientWhatsApp.trim()) {
+      alert("Por favor, informe seu WhatsApp!");
+      return;
+    }
+
+    const { type, plano, planoIndex } = selectedPlan;
+
+    const selectedOptions = plano.options
+      .filter((option: any) => selectedSVAs[`${planoIndex}-${option.name}`])
+      .map((option: any) => option.text)
+      .join(", ");
+
+    const selectedText = selectedOptions ? ` com ${selectedOptions}` : "";
+    const finalPrice = calculateTotalPrice(
+      planoIndex,
+      type === "residencial" ? planosResidenciais : planosComerciais,
+    );
+
+    const planMessage = `Plano ${type === "residencial" ? "Residencial" : "Comercial"} de ${plano.speed} ${plano.unit} por R$ ${finalPrice}/mês${selectedText}`;
+    const fullMessage = `Olá! Meu WhatsApp é: ${clientWhatsApp}\nGostaria de assinar o ${planMessage}.`;
+
+    const whatsappLink = `https://wa.me/27996152427?text=${encodeURIComponent(fullMessage)}`;
+
+    window.open(whatsappLink, "_blank");
+    closePopup();
+  };
+
+  const renderPlanoCards = (
+    planos: typeof planosResidenciais,
+    tabType: "residencial" | "comercial",
+  ) => {
     return (
       <div className="flex flex-col md:flex-row gap-4 w-full max-w-7xl justify-center items-start">
         {planos.map((plano, planoIndex) => (
-          <div key={`${tabType}-${planoIndex}`} className="w-full md:w-80 py-4 border-2 border-primary rounded-4xl flex flex-col relative">
-            <div className="text-xs md:text-sm absolute top-0 right-0 w-32 md:w-45 h-8 md:h-10 flex justify-center items-center rounded-bl-4xl rounded-tr-3xl border-t-0 border-r-0 bg-primary text-secondary">100% FIBRA ÓPTICA</div>
+          <div
+            key={`${tabType}-${planoIndex}`}
+            className="w-full md:w-80 py-4 border-2 border-primary rounded-4xl flex flex-col relative"
+          >
+            <div className="text-xs md:text-sm absolute top-0 right-0 w-32 md:w-45 h-8 md:h-10 flex justify-center items-center rounded-bl-4xl rounded-tr-3xl border-t-0 border-r-0 bg-primary text-secondary">
+              100% FIBRA ÓPTICA
+            </div>
             <div className="mt-12 md:mt-16 px-4 md:px-8">
-              <h1 className="text-xl md:text-2xl font-bold text-primary">Plano de</h1>
-              <h3 className="text-5xl md:text-7xl font-bold text-primary flex flex-row">{plano.speed} <span className="text-3xl md:text-4xl font-bold text-secondary flex justify-center items-end">{plano.unit}</span></h3>
+              <h1 className="text-xl md:text-2xl font-bold text-primary">
+                Plano de
+              </h1>
+              <h3 className="text-5xl md:text-7xl font-bold text-primary flex flex-row">
+                {plano.speed}{" "}
+                <span className="text-3xl md:text-4xl font-bold text-secondary flex justify-center items-end">
+                  {plano.unit}
+                </span>
+              </h3>
 
               {plano.feature && plano.feature !== null && (
                 <div className="flex flex-row gap-4 items-center mb-4 mt-4">
-                  <img src={plano.feature.image} className="w-10 h-10 md:w-12 md:h-12 rounded-full" />
+                  <img
+                    src={plano.feature.image}
+                    className="w-10 h-10 md:w-12 md:h-12 rounded-full"
+                  />
                   <div className="flex flex-col">
                     {plano.feature.text.map((text, index) => (
-                      <p key={index} className="text-xs md:text-sm text-primary font-bold">{text}</p>
+                      <p
+                        key={index}
+                        className="text-xs md:text-sm text-primary font-bold"
+                      >
+                        {text}
+                      </p>
                     ))}
                   </div>
                 </div>
               )}
-              <p className="text-xs md:text-sm text-primary font-bold">Seu plano acompanha com:</p>
+              <p className="text-xs md:text-sm text-primary font-bold">
+                Seu plano acompanha com:
+              </p>
               <div className="flex flex-col gap-2 mt-4">
                 {plano.benefits.map((benefit, index) => (
-                  <div key={index} className="flex flex-row gap-3 md:gap-4 items-center">
+                  <div
+                    key={index}
+                    className="flex flex-row gap-3 md:gap-4 items-center"
+                  >
                     <div className="w-8 h-8 md:w-10 md:h-10 flex justify-center items-center rounded-full bg-secondary">
-                      <Icon icon={benefit.Icon} className="text-xl md:text-2xl text-primary" />
+                      <Icon
+                        icon={benefit.Icon}
+                        className="text-xl md:text-2xl text-primary"
+                      />
                     </div>
                     <div>
                       {benefit.text.map((text, textIndex) => (
-                        <p key={textIndex} className="text-xs md:text-sm text-primary font-bold">{text}</p>
+                        <p
+                          key={textIndex}
+                          className="text-xs md:text-sm text-primary font-bold"
+                        >
+                          {text}
+                        </p>
                       ))}
                     </div>
                   </div>
@@ -194,13 +440,26 @@ export default function Planos() {
 
               <div className="flex flex-col gap-2 mt-4">
                 {plano.options.map((option, optionIndex) => (
-                  <div key={optionIndex} className="flex flex-col items-center justify-between border-2 border-black px-2 py-2 md:py-3 rounded-lg">
+                  <div
+                    key={optionIndex}
+                    className="flex flex-col items-center justify-between border-2 border-black px-2 py-2 md:py-3 rounded-lg"
+                  >
                     <div className="flex flex-row items-center justify-between w-full">
-                      <img src={option.image} alt={option.text} className="w-10 h-10 md:w-12 md:h-12 rounded-full" />
-                      <p className="text-xs md:text-2sm text-primary font-bold">{option.text}</p>
+                      <img
+                        src={option.image}
+                        alt={option.text}
+                        className="w-10 h-10 md:w-12 md:h-12 rounded-full"
+                      />
+                      <p className="text-xs md:text-2sm text-primary font-bold">
+                        {option.text}
+                      </p>
                       <Switch
-                        checked={selectedSVAs[`${planoIndex}-${option.name}`] || false}
-                        onCheckedChange={() => handleSVAChange(planoIndex, option.name)}
+                        checked={
+                          selectedSVAs[`${planoIndex}-${option.name}`] || false
+                        }
+                        onCheckedChange={() =>
+                          handleSVAChange(planoIndex, option.name)
+                        }
                       />
                     </div>
                   </div>
@@ -209,15 +468,28 @@ export default function Planos() {
 
               <div className="flex flex-col items-center justify-center">
                 <div className="flex flex-col items-center">
-                  <p className="text-3xl md:text-5xl uniNeueHeavy text-primary mt-6 md:mt-8">R$ {calculateTotalPrice(planoIndex, planos)}</p>
+                  <p className="text-3xl md:text-5xl uniNeueHeavy text-primary mt-6 md:mt-8">
+                    R$ {calculateTotalPrice(planoIndex, planos)}
+                  </p>
                 </div>
-                <a
-                  href={`https://wa.me/5527996152427?text=Olá, vim pelo site e gostaria de contratar o plano ${tabType} de ${plano.speed} ${plano.unit}${getSelectedSVAsForPlano(planoIndex, planos).length > 0 ? ' com ' + getSelectedSVAsForPlano(planoIndex, planos).join(', ') : ''} - Total: R$ ${calculateTotalPrice(planoIndex, planos)}`}
+                <button
+                  onClick={() =>
+                    openPopup(
+                      tabType as "residencial" | "comercial",
+                      plano,
+                      planoIndex,
+                    )
+                  }
                   className="text-sm md:text-lg text-primary text-center mt-4 font-bold bg-secondary rounded-full px-8 md:px-12 py-2 hover:scale-105 transition-all duration-300"
                 >
                   Contrate agora!
+                </button>
+                <a
+                  href="/PDF/consulte_condicoes.pdf"
+                  className="text-xs hover:scale-105 transition-all duration-300 text-primary text-center font-bold mt-2"
+                >
+                  Consulte condições e viabilidade*
                 </a>
-                <a href="/PDF/consulte_condicoes.pdf" className="text-xs hover:scale-105 transition-all duration-300 text-primary text-center font-bold mt-2">Consulte condições e viabilidade*</a>
               </div>
             </div>
           </div>
@@ -231,25 +503,30 @@ export default function Planos() {
       <Tabs defaultValue="residencial" className="w-full max-w-7xl">
         <div className="w-full flex flex-col md:flex-row justify-between items-center mb-8 md:mb-16 gap-4 md:gap-8 px-4">
           <div className="flex flex-col">
-            <h1 className="text-2xl md:text-4xl font-bold text-primary text-center md:text-left">Planos de verdade para uma vida conectada!</h1>
-            <h2 className="text-sm md:text-2sm text-primary text-center md:text-left">Assine os melhores planos de internet fibra com Wi-Fi grátis e tenha velocidade e estabilidade.</h2>
+            <h1 className="text-2xl md:text-4xl font-bold text-primary text-center md:text-left">
+              Planos de verdade para uma vida conectada!
+            </h1>
+            <h2 className="text-sm md:text-2sm text-primary text-center md:text-left">
+              Assine os melhores planos de internet fibra com Wi-Fi grátis e
+              tenha velocidade e estabilidade.
+            </h2>
           </div>
 
           <TabsList className="flex flex-row max-lg:flex-col max-lg:my-16 gap-2 md:gap-3 w-full md:w-auto bg-transparent p-0">
-            <TabsTrigger 
-              value="residencial" 
+            <TabsTrigger
+              value="residencial"
               className="rounded-full px-4 md:px-6 py-2 md:py-3 text-xs md:text-sm font-bold uppercase transition-all duration-300 border-2 bg-transparent text-primary border-primary data-[state=active]:!bg-primary data-[state=active]:!text-white data-[state=active]:!border-primary data-[state=active]:shadow-lg data-[state=active]:shadow-primary/50 hover:scale-105"
             >
               Planos Residenciais
             </TabsTrigger>
-            <TabsTrigger 
-              value="comercial" 
+            <TabsTrigger
+              value="comercial"
               className="rounded-full px-4 md:px-6 py-2 md:py-3 text-xs md:text-sm font-bold uppercase transition-all duration-300 border-2 bg-transparent text-secondary border-secondary data-[state=active]:!bg-secondary data-[state=active]:!text-white data-[state=active]:!border-secondary data-[state=active]:shadow-lg data-[state=active]:shadow-secondary/50 hover:scale-105"
             >
               Planos Comerciais
             </TabsTrigger>
-            <TabsTrigger 
-              value="corporativo" 
+            <TabsTrigger
+              value="corporativo"
               className="rounded-full px-4 md:px-6 py-2 md:py-3 text-xs md:text-sm font-bold uppercase transition-all duration-300 border-2 bg-transparent text-[#3C1053] border-[#3C1053] data-[state=active]:!bg-[#3C1053] data-[state=active]:!text-white data-[state=active]:!border-[#3C1053] data-[state=active]:shadow-lg data-[state=active]:shadow-[#3C1053]/50 hover:scale-105"
             >
               Planos Corporativos
@@ -258,11 +535,11 @@ export default function Planos() {
         </div>
 
         <TabsContent value="residencial">
-          {renderPlanoCards(planosResidenciais, 'residencial')}
+          {renderPlanoCards(planosResidenciais, "residencial")}
         </TabsContent>
 
         <TabsContent value="comercial">
-          {renderPlanoCards(planosComerciais, 'comercial')}
+          {renderPlanoCards(planosComerciais, "comercial")}
         </TabsContent>
 
         <TabsContent value="corporativo">
@@ -275,10 +552,10 @@ export default function Planos() {
                 Conectividade Premium para o Seu Negócio
               </p>
               <p className="text-center text-lg text-gray-600 mb-12 max-lg:text-base">
-                Tenha uma internet corporativa robusta, estável e desenhada
-                para atender operações que não podem parar. O Plano
-                Corporativo Seliga entrega performance, segurança e suporte
-                especializado para garantir a continuidade do seu negócio.
+                Tenha uma internet corporativa robusta, estável e desenhada para
+                atender operações que não podem parar. O Plano Corporativo
+                Seliga entrega performance, segurança e suporte especializado
+                para garantir a continuidade do seu negócio.
               </p>
 
               <div className="mb-16">
@@ -290,17 +567,13 @@ export default function Planos() {
                     <span className="text-secondary text-xl flex-shrink-0">
                       ✔
                     </span>
-                    <span className="text-base lg:text-lg">
-                      SLA de 4 horas
-                    </span>
+                    <span className="text-base lg:text-lg">SLA de 4 horas</span>
                   </div>
                   <div className="border-2 border-secondary rounded-xl px-4 py-4 flex items-center gap-3">
                     <span className="text-secondary text-xl flex-shrink-0">
                       ✔
                     </span>
-                    <span className="text-base lg:text-lg">
-                      Link Dedicado
-                    </span>
+                    <span className="text-base lg:text-lg">Link Dedicado</span>
                   </div>
                   <div className="border-2 border-secondary rounded-xl px-4 py-4 flex items-center gap-3">
                     <span className="text-secondary text-xl flex-shrink-0">
@@ -398,7 +671,7 @@ export default function Planos() {
               </div>
 
               <div className="flex justify-center mt-8">
-                <a href="https://api.whatsapp.com/send/?phone=5527996152427&text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20or%C3%A7amento%20para%20o%20Plano%20Corporativo.&type=phone_number&app_absent=0">
+                <a href="https://api.whatsapp.com/send/?phone=27996152427&text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20or%C3%A7amento%20para%20o%20Plano%20Corporativo.&type=phone_number&app_absent=0">
                   <button className="bg-secondary text-white font-bold text-lg px-12 py-4 rounded-full hover:scale-105 transition-all duration-300 shadow-lg">
                     FAÇA SEU ORÇAMENTO
                   </button>
@@ -408,6 +681,45 @@ export default function Planos() {
           </div>
         </TabsContent>
       </Tabs>
+
+      {/* Popup Modal */}
+      {showPopup && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 px-2">
+          <div className="relative w-full max-w-full md:max-w-xl rounded-3xl p-6 md:p-12 shadow-2xl">
+            <div className="bg-white rounded-3xl p-8 relative">
+              <h2 className="text-2xl lg:text-3xl font-bold text-center mb-8 text-gray-800">
+                Falta pouco para você aproveitar!
+              </h2>
+
+              <div className="mb-6">
+                <input
+                  type="tel"
+                  placeholder="Seu Whatsapp:"
+                  value={clientWhatsApp}
+                  onChange={handleWhatsAppChange}
+                  className="w-full px-6 py-4 border-2 border-[#ff6b02] rounded-full text-base focus:outline-none focus:border-[#ff6b02] transition-colors"
+                  maxLength={15}
+                />
+              </div>
+
+              <div className="flex gap-4 mt-8">
+                <button
+                  onClick={closePopup}
+                  className="flex-1 bg-gray-400 text-white font-bold text-base px-8 py-4 rounded-full hover:bg-gray-500 transition-all duration-300"
+                >
+                  Fechar
+                </button>
+                <button
+                  onClick={handleSubmitPopup}
+                  className="flex-1 bg-[#ff6b02] text-white font-bold text-base px-8 py-4 rounded-full hover:bg-[#ff6b02] hover:scale-105 transition-all duration-300"
+                >
+                  Quero assinar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
-  )
+  );
 }
