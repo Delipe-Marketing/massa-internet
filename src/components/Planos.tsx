@@ -359,7 +359,7 @@ export default function Planos() {
       planMessage = `Plano ${type === "residencial" ? "Residencial" : "Comercial"} de ${plano.speed} ${plano.unit} por R$ ${finalPrice}/mês${selectedText}`;
       fullMessage = `Olá! Meu WhatsApp é: ${clientWhatsApp}\nGostaria de assinar o ${planMessage}.`;
     }
-    const whatsappLink = `https://wa.me/27996152427?text=${encodeURIComponent(fullMessage)}`;
+    const whatsappLink = `https://wa.me/5527996152427?text=${encodeURIComponent(fullMessage)}`;
     window.open(whatsappLink, "_blank");
     closePopup();
   };

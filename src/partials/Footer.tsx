@@ -26,14 +26,30 @@ export default function Footer() {
 
       <div className="w-full flex flex-col md:flex-row px-4 md:px-70 py-8 md:py-12 gap-8 md:gap-30">
         <div className="flex flex-col gap-4 md:mt-4 items-center md:items-start">
-          <img src="/images/Logo.svg" className="w-40 md:w-60" />
+          <img src="/images/Logo.svg" alt="Logo" className="w-40 md:w-60" />
           <div className="text-sm md:text-base text-center md:text-left">
             Rua Henrique Novaes, Centro,
             <br /> Itaguaçu/ES
           </div>
-          <h1 className="text-2xl md:text-4xl text-center md:text-left">
-            (27) 99615-2427
-          </h1>
+          <div className="flex flex-col gap-2">
+            <div className="text-base md:text-lg font-semibold text-center md:text-left">
+              Suporte:
+            </div>
+            <div className="text-xl md:text-2xl text-center md:text-left">
+              2888-6928
+            </div>
+            <div className="text-xl md:text-2xl text-center md:text-left">
+              0800 591 8681
+            </div>
+          </div>
+          <div className="flex flex-col gap-2 mt-2">
+            <div className="text-base md:text-lg font-semibold text-center md:text-left">
+              Whatsapp Comercial:
+            </div>
+            <div className="text-xl md:text-2xl text-center md:text-left">
+              (27) 99615-2427
+            </div>
+          </div>
         </div>
 
         <div className="flex flex-col md:flex-row gap-8 md:gap-16">
@@ -79,7 +95,13 @@ export default function Footer() {
             </div>
             <div className="flex flex-col gap-2">
               <div className="text-sm md:text-base text-center md:text-left">
-                Whatsapp: <br /> (27) 99615-2427
+                <span className="font-semibold">Suporte:</span> <br /> 
+                2888-6928 | 0800 591 8681
+              </div>
+
+              <div className="text-sm md:text-base text-center md:text-left">
+                <span className="font-semibold">Whatsapp Comercial:</span> <br /> 
+                (27) 99615-2427
               </div>
 
               <div className="text-sm md:text-base text-center md:text-left">
