@@ -11,11 +11,7 @@ const planosResidenciais = [
     feature: null,
     benefits: [
       { Icon: "mdi:television", text: ["80 Canais de TV"] },
-      { Icon: "mdi:support", text: ["Suporte proativo"] },
-      {
-        Icon: "mynaui:percentage-waves-solid",
-        text: ["Desconto de 10%", "na conta de energia"],
-      },
+      { Icon: "mdi:support", text: ["Suporte proativo"] }
     ],
     options: [
       { image: "/images/hbo.png", text: "HBO Max", name: "hbo", price: 20.0 },
@@ -51,11 +47,7 @@ const planosResidenciais = [
     benefits: [
       { Icon: "material-symbols:wifi-rounded", text: ["Wi-Fi 6"] },
       { Icon: "mdi:television", text: ["80 Canais de TV"] },
-      { Icon: "mdi:support", text: ["Suporte proativo"] },
-      {
-        Icon: "mynaui:percentage-waves-solid",
-        text: ["Desconto de 10%", "na conta de energia"],
-      },
+      { Icon: "mdi:support", text: ["Suporte proativo"] }
     ],
     options: [
       { image: "/images/hbo.png", text: "HBO Max", name: "hbo", price: 10.0 },
@@ -90,11 +82,7 @@ const planosResidenciais = [
     benefits: [
       { Icon: "material-symbols:wifi-rounded", text: ["Wi-Fi 6"] },
       { Icon: "mdi:television", text: ["80 Canais de TV"] },
-      { Icon: "mdi:support", text: ["Suporte proativo"] },
-      {
-        Icon: "mynaui:percentage-waves-solid",
-        text: ["Desconto de 10%", "na conta de energia"],
-      },
+      { Icon: "mdi:support", text: ["Suporte proativo"] }
     ],
     options: [
       {
