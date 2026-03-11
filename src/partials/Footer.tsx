@@ -31,25 +31,8 @@ export default function Footer() {
             Rua Henrique Novaes, Centro,
             <br /> Itaguaçu/ES
           </div>
-          <div className="flex flex-col gap-2">
-            <div className="text-base md:text-lg font-semibold text-center md:text-left">
-              Suporte:
-            </div>
-            <div className="text-xl md:text-2xl text-center md:text-left">
-              (27) 2888-6928
-            </div>
-            <div className="text-xl md:text-2xl text-center md:text-left">
-              0800 591 8681
-            </div>
-          </div>
-          <div className="flex flex-col gap-2 mt-2">
-            <div className="text-base md:text-lg font-semibold text-center md:text-left">
-              Whatsapp Comercial:
-            </div>
-            <div className="text-xl md:text-2xl text-center md:text-left">
-              (27) 99615-2427
-            </div>
-          </div>
+          
+          
         </div>
 
         <div className="flex flex-col md:flex-row gap-8 md:gap-16">
