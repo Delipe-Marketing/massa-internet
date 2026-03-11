@@ -36,7 +36,7 @@ export default function Footer() {
               Suporte:
             </div>
             <div className="text-xl md:text-2xl text-center md:text-left">
-              2888-6928
+              (27) 2888-6928
             </div>
             <div className="text-xl md:text-2xl text-center md:text-left">
               0800 591 8681
@@ -96,7 +96,7 @@ export default function Footer() {
             <div className="flex flex-col gap-2">
               <div className="text-sm md:text-base text-center md:text-left">
                 <span className="font-semibold">Suporte:</span> <br /> 
-                2888-6928 | 0800 591 8681
+                (27) 2888-6928 | 0800 591 8681
               </div>
 
               <div className="text-sm md:text-base text-center md:text-left">

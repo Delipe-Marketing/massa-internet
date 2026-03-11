@@ -65,14 +65,28 @@ export default function Header() {
   return (
     <header>
       <div className="w-full h-10 md:h-12 bg-primary px-4 md:px-32 flex justify-between items-center text-white py-2">
-        <a
-          href="tel:2888-6928"
-          className="flex flex-row gap-1 md:gap-2 items-center text-sm md:text-base hover:scale-105 transition-all duration-300"
-        >
-          <Icon icon="mdi:phone" className="text-xl md:text-2xl" />
-          <span className="hidden md:inline">Suporte: 2888-6928 | 0800 591 8681</span>
-          <span className="md:hidden">Suporte</span>
-        </a>
+        <div className="flex flex-row gap-4">
+          <a
+            href="https://wa.me/552728886928"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-row gap-1 md:gap-2 items-center text-sm md:text-base hover:scale-105 transition-all duration-300"
+          >
+            <Icon icon="mdi:phone" className="text-xl md:text-2xl" />
+            <span className="hidden md:inline">Suporte: (27) 2888-6928</span>
+            <span className="md:hidden">Suporte 2888-6928</span>
+          </a>
+          |
+          <a
+            href="https://wa.me/5508005918681"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-row gap-1 md:gap-2 items-center text-sm md:text-base hover:scale-105 transition-all duration-300"
+          >
+            <span className="hidden md:inline">0800 591 8681</span>
+            <span className="md:hidden">Suporte 0800</span>
+          </a>
+        </div>
         <a
           href="https://massainternet.sgp.tsmx.com.br/accounts/central/login"
           className="flex flex-row gap-1 md:gap-2 items-center text-sm md:text-base"
