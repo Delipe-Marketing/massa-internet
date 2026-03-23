@@ -11,7 +11,7 @@ const planosResidenciais = [
     feature: null,
     benefits: [
       { Icon: "mdi:television", text: ["80 Canais de TV"] },
-      { Icon: "mdi:support", text: ["Suporte proativo"] }
+      { Icon: "mdi:support", text: ["Suporte proativo"] },
     ],
     options: [
       { image: "/images/hbo.png", text: "HBO Max", name: "hbo", price: 20.0 },
@@ -47,7 +47,7 @@ const planosResidenciais = [
     benefits: [
       { Icon: "material-symbols:wifi-rounded", text: ["Wi-Fi 6"] },
       { Icon: "mdi:television", text: ["80 Canais de TV"] },
-      { Icon: "mdi:support", text: ["Suporte proativo"] }
+      { Icon: "mdi:support", text: ["Suporte proativo"] },
     ],
     options: [
       { image: "/images/hbo.png", text: "HBO Max", name: "hbo", price: 10.0 },
@@ -82,7 +82,7 @@ const planosResidenciais = [
     benefits: [
       { Icon: "material-symbols:wifi-rounded", text: ["Wi-Fi 6"] },
       { Icon: "mdi:television", text: ["80 Canais de TV"] },
-      { Icon: "mdi:support", text: ["Suporte proativo"] }
+      { Icon: "mdi:support", text: ["Suporte proativo"] },
     ],
     options: [
       {
@@ -333,7 +333,6 @@ export default function Planos() {
     let fullMessage = "";
     if (plano.isCorporativo) {
       planMessage = `Plano Corporativo - Gostaria de fazer um orçamento personalizado.`;
-      fullMessage = `Olá! Meu WhatsApp é: ${clientWhatsApp}\n${planMessage}`;
     } else {
       const selectedOptions = plano.options
         .filter((option: any) => selectedSVAs[`${planoIndex}-${option.name}`])
@@ -344,9 +343,9 @@ export default function Planos() {
         planoIndex,
         type === "residencial" ? planosResidenciais : planosComerciais,
       );
-      planMessage = `Plano ${type === "residencial" ? "Residencial" : "Comercial"} de ${plano.speed} ${plano.unit} por R$ ${finalPrice}/mês${selectedText}`;
-      fullMessage = `Olá! Meu WhatsApp é: ${clientWhatsApp}\nGostaria de assinar o ${planMessage}.`;
+      planMessage = `Plano ${type === "residencial" ? "Residencial" : "Comercial"} de ${plano.speed} ${plano.unit}`;
     }
+    fullMessage = `Olá! Meu WhatsApp é: ${clientWhatsApp}\nVim pelo site e gostaria de assinar o plano ${planMessage}`;
     const whatsappLink = `https://wa.me/5527996152427?text=${encodeURIComponent(fullMessage)}`;
     window.open(whatsappLink, "_blank");
     closePopup();

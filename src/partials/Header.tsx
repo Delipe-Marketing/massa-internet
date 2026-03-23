@@ -67,7 +67,7 @@ export default function Header() {
       <div className="w-full h-10 md:h-12 bg-primary px-4 md:px-32 flex justify-between items-center text-white py-2">
         <div className="flex flex-row gap-4">
           <a
-            href="https://wa.me/552728886928"
+            href="https://wa.me/552728886928?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20assinar%20um%20plano"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-row gap-1 md:gap-2 items-center text-sm md:text-base hover:scale-105 transition-all duration-300"
@@ -78,7 +78,7 @@ export default function Header() {
           </a>
           |
           <a
-            href="https://wa.me/5508005918681"
+            href="https://wa.me/5508005918681?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20assinar%20um%20plano"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-row gap-1 md:gap-2 items-center text-sm md:text-base hover:scale-105 transition-all duration-300"
@@ -173,7 +173,7 @@ export default function Header() {
         {/* Botões Desktop */}
         <div className="max-lg:hidden md:flex flex-row gap-2 items-center text-white">
           <a
-            href="https://wa.me/5527996152427?text=Olá, vim pelo site e gostaria de contratar um plano"
+            href="https://wa.me/5527996152427?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20assinar%20um%20plano"
             target="_blank"
             rel="noopener noreferrer"
             className="h-8 bg-secondary rounded-full flex justify-center items-center gap-2 px-6 text-sm hover:scale-110 transition-all duration-300"
