@@ -98,7 +98,7 @@ export default function Footer() {
                 <span className="font-semibold">Whatsapp Comercial:</span>{" "}
                 <br />
                 <a
-                  href="https://wa.me/5527996152427"
+                  href="https://api.whatsapp.com/send/?phone=5527996152427&text=Ol%C3%A1%21+Vim+pelo+site+e+gostaria+de+assinar+um+plano&type=phone_number&app_absent=0"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:underline"
